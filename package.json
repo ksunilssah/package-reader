@@ -1,5 +1,5 @@
 {
-  "name": "package.reader",
+  "name": "pkg.reader",
   "version": "0.1.0",
   "description": "package json reader ",
   "main": "index.js",
