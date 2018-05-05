@@ -1,0 +1,22 @@
+{
+  "name": "package-reader",
+  "version": "0.1.0",
+  "description": "package json reader ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksunilssah/package-reader.git"
+  },
+  "keywords": [
+    "pacakges reader"
+  ],
+  "author": "PG, Sunil, Sneh Raj <ksunilssah@gmail.com> (http://localhost)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksunilssah/package-reader/issues"
+  },
+  "homepage": "https://github.com/ksunilssah/package-reader#readme"
+}
