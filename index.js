@@ -3,24 +3,23 @@ const fs = require('fs'),
     http = require('http');
 
 
-const packageReader = function () {
+const packageReader = function (host, port) {
     let location = path.join(process.cwd(), 'package.json');
     fs.readFile(location, 'utf8', function (err, pack) {
         if (err) {
             return console.log(err);
         }
         let packageObj = JSON.parse(pack);
-        this.sendDetails(packageObj);
+        packageReader.sendDetails(packageObj, host, port);
     });
 }
 
 
-packageReader.sendDetails = function (dataObj) {
+packageReader.sendDetails = function (dataObj, host, port) {
 
-    // An object of options to indicate where to post to
     var config = {
-        host: 'http://localhost',
-        port: '5050',
+        hostname: host || 'localhost',
+        port: port,
         method: 'POST',
     };
 
