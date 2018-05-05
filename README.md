@@ -5,4 +5,4 @@ Small package to fetch package.json data.
 
 ## Installation
 
-  `npm install package.reader`
+  `npm install pkg-reader`

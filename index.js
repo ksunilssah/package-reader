@@ -1,6 +1,7 @@
 const fs = require('fs'),
     path = require('path'),
-    http = require('http');
+    http = require('http'),
+    watcher = require('filewatcher');
 
 
 const packageReader = function (host, port) {
@@ -23,7 +24,7 @@ packageReader.sendDetails = function (dataObj, host, port) {
         path: '/fire-photon',
         method: 'POST',
         headers: {
-	        'Content-type': 'application/json'
+            'Content-type': 'application/json'
         }
     };
 
